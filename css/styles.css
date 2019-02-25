@@ -145,7 +145,7 @@ p {
 
 /* Showcase */
 #showcase {
-   background: #333 url("../img/brisbane.jpg") no-repeat center center/cover;
+   background-image: linear-gradient(to bottom, #000000, #301d28, #533757, #695792, #6280d3);
    height: 100vh;
    color: #fff;
 
