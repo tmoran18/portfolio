@@ -143,12 +143,23 @@ p {
    border-radius: 3px;
 }
 
+.logo{
+   position: relative;
+   margin-left:5rem;
+   margin-top:1rem;
+}
+
+.logo-name{
+   position: absolute;
+   top:2rem;
+   left:7rem;
+}
+
 /* Showcase */
 #showcase {
-   background-image: linear-gradient(to bottom, #000000, #301d28, #533757, #695792, #6280d3);
+   background-image: linear-gradient(to bottom, #000000, #2b0e1d, #4a103e, #61196a, #672ea2, #5f47c2, #4a5fe1, #0076ff, #008aff, #009cff, #00adff, #00bcff);
    height: 100vh;
    color: #fff;
-
 }
 
 #showcase .showcase-content {
