@@ -117,12 +117,6 @@ p {
    border-bottom: 1px dotted #444;
 }
 
-.container {
-   max-width: 1100px;
-   margin: auto;
-   padding: 0 2rem;
-   overflow: hidden;
-}
 
 .active{
    border-bottom:1px solid #fff;
@@ -132,21 +126,24 @@ p {
 #navbar {
    display: flex;
    position: sticky;
-   color: #fff;
-   top: 0;
    justify-content: space-between;
    z-index: 1;
+   top:0;
    padding: .8rem;
-   height:7rem;
+   height:5.7rem;
 }
 
+/* Styling for Navbar on scroll - JavaScript */
+.navbar-scroll{
+   background:#292929;
+}
 #navbar ul {
    display: flex;
    flex:1;
    align-items: center;
    list-style: none;
-   margin-bottom:2rem;
    font-size:1.2rem;
+   justify-content: center;
    
 }
 
@@ -161,16 +158,15 @@ p {
    position: relative;
    margin-left:2rem;
   flex:1;
+  margin-top:-.1rem;
 }
 
-#showcase #navbar .logo-name{
+/* Styling for Scroll Function in JavaScript */
+.logo-scroll{
+   width:4rem;
    position: absolute;
-   top:1.4rem;
-   left:6rem;
-   font-family: 'Asap', sans-serif;
-   letter-spacing: .1rem;
-   width:15rem;
-} 
+   margin:0 0 0 -1rem;
+}
 
 #navbar .contact{
    display:flex;
@@ -178,9 +174,8 @@ p {
    align-items: flex-start;
    padding-top:1rem;
    flex:1;
+   color:#fff;
 }
-
-
 
 #navbar ul li a {
   position: relative;
@@ -208,6 +203,7 @@ p {
    color: #fff;
    position: relative;
    background:url("../img/background.png") no-repeat center center/cover;
+   margin-top:-5.7rem;
 }
 
 #showcase .showcase-content {
@@ -217,43 +213,20 @@ p {
    align-items: center;
    justify-content: center;
    height: 100%;
-   margin-top:-7rem;
+
 }
 
 /* Section: About Us */
-#about .items {
-   display: flex;
-   padding: 1rem;
+#about{
+   height:100vh;
+background:#FDF9ED;
 }
 
-#about .items .item {
-   flex: 1;
-   text-align: center;
-   padding: 1rem;
+/* Section: Portfolio */
+#portfolio{
+   height:100vh;
+   background:#333333;
 }
-
-#about .items .item i {
-   background: #c00101;
-   padding: 1.5rem;
-   border-radius: 50%;
-   color: white;
-   margin-bottom: 1rem;
-}
-
-/* Section: Team */
-#team {
-   display: flex;
-}
-
-#team div {
-   flex: 1;
-   flex-basis: 50%;
-}
-
-#team .team-img {
-   background: url("../img/business-group.jpeg") no-repeat center center/cover;
-}
-
 /* Section:Clients */
 
 #clients .items {
@@ -290,4 +263,8 @@ p {
    width: 100%;
    padding: 0.5rem;
 }
+
+
+
+
 

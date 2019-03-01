@@ -1,27 +1,6 @@
-// Initialize and add the map
-function initMap() {
-   // Your location
-   const loc = { lat: -27.46977, lng: 153.025131 };
-   // Centered map on location
-   const map = new google.maps.Map(document.querySelector(".map"), {
-      zoom: 14,
-      center: loc
-   });
-   // The marker, positioned at location
-   const marker = new google.maps.Marker({ position: loc, map: map });
-}
-
-// // Sticky menu background
-// window.addEventListener("scroll", function() {
-//    if (window.scrollY > 150) {
-//       document.querySelector("#navbar").style.opacity = 0.7;
-//    } else {
-//       document.querySelector("#navbar").style.opacity = 1;
-//    }
-// });
 
 // Smooth Scrolling
-$("#navbar a, .btn").on("click", function(event) {
+$("#navbar a, .btn").on("click", function (event) {
    if (this.hash !== "") {
       event.preventDefault();
 
@@ -35,3 +14,22 @@ $("#navbar a, .btn").on("click", function(event) {
       );
    }
 });
+
+
+// Change navigation colour on scroll
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+   var navbar = document.getElementById('navbar');
+   var logo = document.getElementById('logo');
+
+   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      logo.className = ('logo-scroll')
+      navbar.className = ('navbar-scroll');
+   } else {
+      navbar.className = ('navbar');
+      document.getElementById('navbar').style.transition = "all 1s";
+      document.getElementById('logo').style.transition = "all 3s";
+      logo.className = ('logo');
+   }
+}
