@@ -27,6 +27,11 @@ p {
    color: #c00101;
 }
 
+.roboto{
+   font-family: "Roboto", sans-serif;
+   font-weight:400;
+   font-size:.8rem;
+}
 .bg-light {
    background: #f4f4f4;
    color: #333;
@@ -84,6 +89,10 @@ p {
    padding: 3rem;
 }
 
+.pxr-1{
+   padding-right:1rem;
+}
+
 .btn {
    display: inline-block;
    color: #fff;
@@ -132,9 +141,9 @@ p {
 
 #navbar ul {
    display: flex;
-   align-items: flex-end;
+   flex:1;
+   align-items: center;
    list-style: none;
-   margin-right:5rem;
    margin-bottom:2rem;
    font-size:1.2rem;
    
@@ -154,7 +163,7 @@ p {
 #navbar .logo{
    position: relative;
    margin-left:2rem;
-   z-index: 2;
+  flex:1;
 }
 
 #showcase #navbar .logo-name{
@@ -165,6 +174,14 @@ p {
    letter-spacing: .1rem;
    width:15rem;
 } 
+
+#navbar .contact{
+   display:flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+   padding-top:1rem;
+   flex:1;
+}
 
 /* Showcase */
 #showcase {
@@ -255,18 +272,3 @@ p {
    padding: 0.5rem;
 }
 
-
-.contact{
-align-self: center;
-margin-bottom:.9rem;
-   width:350px;
-}
-
-#navbar ul{
-
-}
-
-#navbar .logo{
-
-   width:460px;
-}
