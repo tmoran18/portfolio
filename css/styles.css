@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Asap:400,700');
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
 * {
    box-sizing: border-box;
@@ -10,6 +12,7 @@ body {
    font-family: "Roboto", sans-serif;
    line-height: 1.4;
 }
+
 
 a {
    text-decoration: none;
@@ -47,13 +50,13 @@ p {
 }
 
 .l-heading {
-   font-size: 4rem;
+   font-size: 6rem;
    margin-bottom: 0.75rem;
-   line-height: 1.1;
+   font-family: 'Reem Kufi', sans-serif;
 }
 
 .m-heading {
-   font-size: 2rem;
+   font-size: 3rem;
    margin-bottom: 0.75rem;
    line-height: 1.1;
 }
@@ -123,13 +126,18 @@ p {
    top: 0;
    justify-content: space-between;
    z-index: 1;
-   padding: 1rem;
+   padding: .8rem;
+   height:7rem;
 }
 
 #navbar ul {
    display: flex;
-   align-items: center;
+   align-items: flex-end;
    list-style: none;
+   margin-right:5rem;
+   margin-bottom:2rem;
+   font-size:1.2rem;
+   
 }
 
 #navbar ul li a {
@@ -143,40 +151,37 @@ p {
    border-radius: 3px;
 }
 
-.logo{
+#navbar .logo{
    position: relative;
-   margin-left:5rem;
-   margin-top:1rem;
+   margin-left:2rem;
+   z-index: 2;
 }
 
-.logo-name{
+#showcase #navbar .logo-name{
    position: absolute;
-   top:2rem;
-   left:7rem;
-}
+   top:1.4rem;
+   left:6rem;
+   font-family: 'Asap', sans-serif;
+   letter-spacing: .1rem;
+   width:15rem;
+} 
 
 /* Showcase */
 #showcase {
-   background-image: linear-gradient(to bottom, #000000, #2b0e1d, #4a103e, #61196a, #672ea2, #5f47c2, #4a5fe1, #0076ff, #008aff, #009cff, #00adff, #00bcff);
    height: 100vh;
    color: #fff;
+   position: relative;
+   background:url("../img/background.png") no-repeat center center/cover;
 }
 
 #showcase .showcase-content {
    display: flex;
    flex-direction: column;
    text-align: center;
-   justify-content: center;
    align-items: center;
+   justify-content: center;
    height: 100%;
-   padding: 0 2rem;
-   /* Overlay */
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background-color: rgba(0, 0, 0, 0.5);
+   margin-top:-7rem;
 }
 
 /* Section: About Us */
@@ -248,4 +253,20 @@ p {
 #contact .contact-form textarea {
    width: 100%;
    padding: 0.5rem;
+}
+
+
+.contact{
+align-self: center;
+margin-bottom:.9rem;
+   width:350px;
+}
+
+#navbar ul{
+
+}
+
+#navbar .logo{
+
+   width:460px;
 }
