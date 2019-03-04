@@ -34,3 +34,18 @@ function scrollFunction() {
    }
 }
 
+// Show more reveal
+var content = document.getElementById("portfolio");
+var button = document.getElementById("show-more");
+
+button.onclick = function(){
+
+   if(content.className == "open") {
+      //Shrink Box
+      content.className = "";
+   } else {
+      //expand the box
+      content.className = "open";
+      button.innerHTML = "Show Less"
+   }
+};

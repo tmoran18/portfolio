@@ -226,6 +226,34 @@ background:#FDF9ED;
 #portfolio{
    height:100vh;
    background:#fff;
+   max-height:870px;
+   overflow: hidden;
+   -webkit-transition: max-height 0.7s;
+   -moz-transition: max-height 0.7s;
+   transition: max-height 0.7s;
+}
+
+#portfolio.open{
+   max-height:2000px;
+   -webkit-transition: max-height 0.7s;
+   -moz-transition: max-height 0.7s;
+   transition: max-height 0.7s;
+
+}
+#portfolio h2 {
+   font-size:3rem;
+   text-align: center;
+}
+
+#show-more{
+   background:#1594e5;
+   color:#fff;
+   display:block;
+   width:140px;
+   padding:1rem;
+   text-align: center;
+   margin:20px auto;
+   cursor: pointer;
 }
 
 .card-container,
