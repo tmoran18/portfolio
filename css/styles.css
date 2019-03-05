@@ -96,7 +96,10 @@ p {
    text-align:    center;
    text-shadow:   none;
    }
-   
+ 
+.btn-light{
+   color:#fff;
+}
 
 .btn:hover {
 
@@ -279,27 +282,26 @@ background:#FDF9ED;
  }
 
 
-
-/* Section:Clients */
-
-#clients .items {
-   display: flex;
-}
-
-#clients .items img {
-   display: block;
-   margin: auto;
-   width: 100%;
-}
-
 /* Section: Contact */
 #contact {
-   display: flex;
+   height:100vh;
+   display:flex;
+   background:url("../img/bulb.jpg") no-repeat center center/cover;
+
+}
+#contact form{
+   margin:0 auto;
+}
+#contact .contact-form {
+   flex:1;
 }
 
-#contact .map,
-#contact .contact-form {
-   flex: 1;
+#contact .contact-form h2 {
+   color:#fff;
+}
+
+#contact .contact-right{
+   flex:1;
 }
 
 #contact .contact-form .form-group {
@@ -309,6 +311,8 @@ background:#FDF9ED;
 
 #contact .contact-form label {
    display: block;
+   color:#fff;
+   padding-bottom:0.4rem;
 }
 
 #contact .contact-form input,
@@ -317,6 +321,20 @@ background:#FDF9ED;
    padding: 0.5rem;
 }
 
+#contact .contact-form textarea:last-child{
+   padding-bottom:5rem;
+}
+#contact .contact-form input[type=submit]{
+   width:10rem;
+   margin: 0 auto;
+   margin-left:1rem;
+   cursor: pointer;
+}
+
+#contact .contact-details p{
+   color:#fff;
+   margin-left:1rem;
+}
 
 
 
