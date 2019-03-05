@@ -295,10 +295,16 @@ background:#FDF9ED;
 /* Section: Contact */
 #contact {
    height:100vh;
-   display:flex;
-   background:url("../img/bulb.jpg") no-repeat center center/cover;
 
+   background:url("../img/bulb.jpg") no-repeat center center/cover;
 }
+
+.contact-container{
+   display:flex;
+   max-width:1920px;
+   margin:auto;
+}
+
 #contact form{
    margin:0 auto;
 }
