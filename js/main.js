@@ -35,17 +35,18 @@ function scrollFunction() {
 }
 
 // Show more reveal
-var content = document.getElementById("portfolio");
+var moreCards = document.getElementById("more-cards");
 var button = document.getElementById("show-more");
 
 button.onclick = function(){
 
-   if(content.className == "open") {
+   if(moreCards.className == "open") {
       //Shrink Box
-      content.className = "";
+      moreCards.className = "";
+      button.innerHTML = "Show More"
    } else {
       //expand the box
-      content.className = "open";
+      moreCards.className = "open";
       button.innerHTML = "Show Less"
    }
 };

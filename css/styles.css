@@ -227,10 +227,8 @@ background:#FDF9ED;
 
 /* Section: Portfolio */
 #portfolio{
-   height:100vh;
+   /* height:100vh; */
    background:#fff;
-   max-height:870px;
-   overflow: hidden;
    -webkit-transition: max-height 0.7s;
    -moz-transition: max-height 0.7s;
    transition: max-height 0.7s;
@@ -259,14 +257,26 @@ background:#FDF9ED;
    cursor: pointer;
 }
 
-.card-container,
-#more-cards {
+.card-container, #more-cards {
    /* padding: 10px 16px; */
    display:flex;
    flex-wrap: wrap;
    max-width:1920px;
    margin:0 auto;
    justify-content: center;
+ }
+
+ #more-cards{
+    display:none;
+ }
+
+ #more-cards.open{
+    display:block;
+    display:flex;
+    flex-wrap: wrap;
+    max-width:1920px;
+    margin:0 auto;
+    justify-content: cent
  }
 .card {
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
