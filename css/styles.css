@@ -99,11 +99,10 @@ p {
  
 .btn-light{
    color:#fff;
+   display:inline-block;
 }
 
-.btn:hover {
 
-}
 
 .btn-dark {
    background: #333;
@@ -229,18 +228,9 @@ background:#FDF9ED;
 #portfolio{
    /* height:100vh; */
    background:#fff;
-   -webkit-transition: max-height 0.7s;
-   -moz-transition: max-height 0.7s;
-   transition: max-height 0.7s;
+  
 }
 
-#portfolio.open{
-   max-height:2000px;
-   -webkit-transition: max-height 0.7s;
-   -moz-transition: max-height 0.7s;
-   transition: max-height 0.7s;
-
-}
 #portfolio h2 {
    font-size:3rem;
    text-align: center;
@@ -271,12 +261,12 @@ background:#FDF9ED;
  }
 
  #more-cards.open{
-    display:block;
     display:flex;
     flex-wrap: wrap;
     max-width:1920px;
     margin:0 auto;
-    justify-content: cent
+    justify-content: center;
+    
  }
 .card {
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
