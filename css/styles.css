@@ -138,7 +138,9 @@ p {
 /* Styling for Navbar on scroll - JavaScript */
 .navbar-scroll{
    background:#292929;
+
 }
+
 #navbar ul {
    display: flex;
    flex:1;
@@ -226,7 +228,7 @@ background:#FDF9ED;
 
 /* Section: Portfolio */
 #portfolio{
-   /* height:100vh; */
+   min-height:100vh;
    background:#fff;
   
 }

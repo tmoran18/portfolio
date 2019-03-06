@@ -21,10 +21,10 @@
          <a href="#home"><img id="logo" src="img/logo-dark.png" alt="" width="80"></a>
       </div>
       <ul>
-         <li><a href="#home">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#portfolio">Portfolio</a></li>
-         <li><a href="#contact">Contact</a></li>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="index.html#about">About</a></li>
+         <li><a href="index.html#portfolio">Portfolio</a></li>
+         <li><a href="index.html#contact">Contact</a></li>
       </ul>
       <div class="contact">
          <i class="far fa-envelope"><strong class="roboto pr-1"> t.moran.11@student.scu.edu.au</strong></i>
@@ -45,15 +45,25 @@
                   <p>JavaScript</p>
                </div>
             </div>
-         </div>
-         <div class="portfolio-image">
-            <img src="img/hhm-law.png" alt="" width="600">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem similique cumque ex praesentium, architecto facilis voluptatibus nostrum modi, aperiam sapiente accusamus
+               beatae ipsum, corporis dolore assumenda expedita doloribus nemo quod quam ad. Vel dolore, ad eaque reiciendis modi, autem ab rerum vero eos temporibus aliquam pariatur itaque deleniti
+               sint quaerat nostrum eveniet non consectetur nulla! Blanditiis, quibusdam nesciunt. Eveniet obcaecati, in eum voluptas fuga pariatur ducimus itaque praesentium repudiandae, quidem esse,
+               illum ipsum accusamus eos?</p>
          </div>
 
+         <div class="portfolio-image">
+            <img src="img/hhm-law.jpg" alt="">
+         </div>
       </section>
    </div>
+   <div class="portfolio-container-bottom">
+      <div class="portfolio-full-image">
+         <img src="img/hhm-law-full.jpg" alt="">
+      </div>
+
+   </div>
    <!-- Footer -->
-   <footer id="main-footer" class="bg-dark text-center py-1">
+   <footer class="bg-dark text-center py-1">
       <div class="container"></div>
       <a href="#home" class="btn-light">Top</a>
       <p>Copyright &copy; 2019, TLM Development, All Rights Reserved</p>
@@ -61,9 +71,26 @@
    <!-- JQuery CDN -->
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
    <!-- Local JS File -->
-   <script src="js/main.js"></script>
+   <script>
+      // Change navigation colour on scroll
+      window.onscroll = function () { scrollFunction() };
 
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2ZvuAZiJo2NFUXqGWpUHnVyc9XhbpQJg&callback=initMap" async defer></script>
+      function scrollFunction() {
+         var navbar = document.getElementById('navbar');
+         var logo = document.getElementById('logo');
+
+         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            logo.className = ('logo-scroll')
+            navbar.className = ('navbar-scroll');
+         } else {
+            navbar.className = ('navbar');
+            document.getElementById('navbar').style.transition = "all 1s";
+            document.getElementById('logo').style.transition = "all 3s";
+            logo.className = ('logo');
+         }
+      }
+   </script>
+
 </body>
 
 </html>

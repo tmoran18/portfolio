@@ -4,6 +4,19 @@ body{
 .portfolio-container{
     max-width:1200px;
     margin:auto;
+    height:50vh;
+}
+
+.portfolio-container-bottom{
+    background:#fafafa;
+    border-top:#dddddd solid 1px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.portfolio-container-bottom .portfolio-full-image{
+    padding-top:2rem;
 }
 #portfolio-showcase{
     display: flex;
@@ -26,6 +39,16 @@ body{
     justify-content: space-between;
 }
 
+#portfolio-showcase .portfolio-image img{
+    max-width:100%;
+    max-height:100%;
+    padding-left:5rem;
+}
+
+.portfolio-container:last-child{
+    background:black;
+}
+
 #portfolio-showcase .portfolio-title .skills{
     text-align: right;
 }
@@ -39,3 +62,7 @@ body{
 
  }
  
+
+ footer{
+     clear: both;
+ }
