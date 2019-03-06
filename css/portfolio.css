@@ -1,10 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
 body{
 }
+p{
+    margin:0;
+    color:#333;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    z-index: 1;
+    top:0;
+    padding: .8rem;
+    height:5.7rem;
+ }
+ 
+ /* Styling for Navbar on scroll - JavaScript */
+ .navbar-scroll {
+    background:#292929;
+ 
+ }
+ 
+ #navbar ul {
+    display: flex;
+    flex:1;
+    align-items: center;
+    list-style: none;
+    font-size:1.2rem;
+    justify-content: center;
+    
+ }
+ 
+ #navbar ul li a {
+    color: #000;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+ }
+ 
+ 
+ #navbar .logo{
+    position: relative;
+    margin-left:2rem;
+   flex:1;
+   margin-top:-.1rem;
+ }
+
 
 .portfolio-container{
     max-width:1200px;
     margin:auto;
-    height:50vh;
+    min-height:50vh;
+    padding:2rem;
 }
 
 .portfolio-container-bottom{
@@ -12,16 +61,20 @@ body{
     border-top:#dddddd solid 1px;
     display:flex;
     justify-content: center;
+    padding-bottom:5rem;
     
 }
 
 .portfolio-container-bottom .portfolio-full-image{
-    padding-top:2rem;
+    padding-top:4rem;
+}
+
+.portfolio-container-bottom .portfolio-full-image img{
+    padding:2rem;
 }
 #portfolio-showcase{
     display: flex;
-
-    margin-top:3rem;
+    margin-top:5rem;
     height:500px;
     justify-content: space-between;
 }
@@ -31,12 +84,21 @@ body{
 }
 #portfolio-showcase .portfolio-title h1{
     font-size:3rem;
-    border-bottom:1px solid black;
+    font-weight:300;
+    padding-bottom:1rem;
 }
-
+#portfolio-showcase .portfolio-title li{
+    list-style: none;
+}
+#portfolio-showcase .portfolio-title p{
+    line-height:1.9;
+}
 #portfolio-showcase .portfolio-title .skills-focus{
     display:flex;
     justify-content: space-between;
+    color:#8e8e8e;
+    border-top:1px solid #cccccc;
+    padding-top:1rem;
 }
 
 #portfolio-showcase .portfolio-image img{
@@ -52,17 +114,6 @@ body{
 #portfolio-showcase .portfolio-title .skills{
     text-align: right;
 }
-#navbar ul li a {
-    color: #000;
-    padding: 0.75rem;
-    margin: 0 0.25rem;
- }
 
- #navbar{
 
- }
  
-
- footer{
-     clear: both;
- }
