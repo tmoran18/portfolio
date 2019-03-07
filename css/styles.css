@@ -214,6 +214,38 @@ p {
    cursor: pointer;
 }
 
+#portfolio .card-container{
+   padding-left:.7rem;
+   padding-right: .7rem;
+}
+
+#portfolio .card-container .card-container-details{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   align-content: center;
+   width:100%;
+}
+#portfolio .card-container .card-container-icons{
+   display:flex;
+   flex-direction: column;
+   text-align: right;
+   
+}
+
+#portfolio .card-container .card-container-icons a{
+   color:#666666;
+}
+
+#portfolio .card-container .card-container-icons a:hover{
+   color:#9b9b9b;
+}
+
+#portfolio .card-container .card-container-icons i{
+   padding:.3rem 0 ;
+
+}
+
 .card-container, #more-cards {
    display:flex;
    flex-wrap: wrap;
@@ -221,6 +253,7 @@ p {
    margin:0 auto;
    justify-content: center;
  }
+
 /* Class styling to hide the content via JavaScrip */
  #more-cards{
     display:none;
