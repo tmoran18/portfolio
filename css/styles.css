@@ -180,7 +180,7 @@ p {
    height: 100vh;
    color: #fff;
    position: relative;
-   background:url("../img/background.png") no-repeat center center/cover;
+   background:url("../img/main/background.png") no-repeat center center/cover;
    margin-top:-5.7rem;
 }
 
@@ -284,7 +284,7 @@ p {
 #contact {
    height:100vh;
 
-   background:url("../img/bulb.jpg") no-repeat center center/cover;
+   background:url("../img/main/bulb.jpg") no-repeat center center/cover;
 }
 
 .contact-container{

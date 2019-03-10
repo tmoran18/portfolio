@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+   line-height: 1.4;
+}
+
+a {
+   text-decoration: none;
+}
+
+p {
+   margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.text-primary {
+   color: #c00101;
+}
+
+.bg-light {
+   background: #f4f4f4;
+   color: #333;
+}
+
+.bg-dark {
+   background: #17202a;
+   color: #fff;
+}
+
+.bg-primary {
+   background: #c00101;
+   color: #fff;
+}
+.fa-balance-scale {
+   font-size: 1.75rem;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.l-heading {
+   font-size: 4rem;
+   margin-bottom: 0.75rem;
+   line-height: 1.1;
+}
+
+.m-heading {
+   font-size: 2rem;
+   margin-bottom: 0.75rem;
+   line-height: 1.1;
+}
+.lead {
+   font-size: 1.3rem;
+   margin-bottom: 2rem;
+}
+
+.py-1 {
+   padding: 1.5rem 0;
+}
+.py-2 {
+   padding: 2rem 0;
+}
+.py-3 {
+   padding: 3rem 0;
+}
+.p-1 {
+   padding: 1.5rem;
+}
+.p-2 {
+   padding: 2rem;
+}
+.p-3 {
+   padding: 3rem;
+}
+
+.btn {
+   display: inline-block;
+   color: #fff;
+   background: #c00101;
+   padding: 0.7rem 3rem;
+   border: none;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   background: rgb(108, 0, 0);
+}
+
+.btn-dark {
+   background: #333;
+   color: #fff;
+}
+
+.list {
+   margin: 0.5rem 0;
+   list-style: none;
+}
+
+.list li {
+   padding: 0.5rem 0;
+   border-bottom: 1px dotted #444;
+}
+
+.container {
+   max-width: 1100px;
+   margin: auto;
+   padding: 0 2rem;
+   overflow: hidden;
+}
+/* Topbar */
+#topbar {
+   display: flex;
+   position: sticky;
+   background:#fff;
+   top: 0;
+   justify-content: flex-end;
+   z-index: 2;
+}
+
+#topbar ul {
+   display: flex;
+   align-items: center;
+   list-style: none;
+}
+#topbar ul li a {
+   color: #000;
+   padding-right:2.5rem;
+   margin: 0 0.25rem;
+   font-size:.8rem;
+}
+/* Navbar */
+#navbar {
+   display: flex;
+   position: sticky;
+   background: rgb(17, 17, 17);
+   color: #fff;
+   top: 0;
+   justify-content: space-between;
+   z-index: 1;
+   padding: 1.5rem;
+}
+
+#navbar ul {
+   display: flex;
+   align-items: center;
+   list-style: none;
+}
+
+#navbar ul li a {
+   color: #fff;
+   padding: 0.75rem;
+   margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+   background: #c00101;
+   border-radius: 3px;
+}
+
+/* Showcase */
+#showcase {
+   background: #333 url("../../img/hhm/brisbane.jpg") no-repeat center center/cover;
+   height: 100vh;
+   color: #fff;
+   position: relative;
+}
+
+#showcase .showcase-content {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   padding: 0 2rem;
+   /* Overlay */
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section: About Us */
+#about{
+   padding:7.5rem 0
+}
+#about .items {
+   display: flex;
+   padding: 1rem;
+}
+
+#about .items .item {
+   flex: 1;
+   text-align: center;
+   padding: 1rem;
+}
+
+#about .items .item i {
+   background: #c00101;
+   padding: 1.5rem;
+   border-radius: 50%;
+   color: white;
+   margin-bottom: 1rem;
+}
+
+/* Section: Team */
+#team {
+   display: flex;
+
+}
+
+#team div {
+   flex: 1;
+   flex-basis: 50%;
+   padding-top:7.5rem;
+   padding-bottom:7.5rem;
+}
+
+#team .team-img {
+   background: url("../../img/hhm/business-group.jpeg") no-repeat center center/cover;
+}
+
+/* Section:Clients */
+
+#clients .items {
+   display: flex;
+}
+
+#clients .items img {
+   display: block;
+   margin: auto;
+   width: 100%;
+}
+
+/* Section: Contact */
+#contact {
+   display: flex;
+}
+
+#contact .map,
+#contact .contact-form {
+   flex: 1;
+}
+
+#contact .contact-form .form-group {
+   margin: 0.75rem;
+   padding: 0.5rem;
+}
+
+#contact .contact-form label {
+   display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+   width: 100%;
+   padding: 0.5rem;
+}
