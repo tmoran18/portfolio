@@ -56,6 +56,52 @@ p{
     padding:2rem;
 }
 
+
+.portfolio-image {
+    position: relative;
+    width: 50%;
+  }
+
+  .porfolio-image .overlay .text{
+      color:#cccccc;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 86%;
+    opacity: 0;
+    transition: 1.8s ease;
+    background-color: rgb(255, 255, 255);
+    border:1px solid red;
+  }
+  
+  .portfolio-image:hover .overlay {
+    opacity: 0.9;
+  }
+  
+  .text {
+    color: #4d4d4d;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
 .portfolio-container-bottom{
     background:#fafafa;
     border-top:#dddddd solid 1px;
