@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Gamer Grid | Your Games News Website</title>
+  <title>Stayz Hotels | Your Hotel Booking Website</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/portfolio.css" />
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
@@ -21,10 +21,10 @@
       <a href="#home"><img id="logo" src="img/main/logo-dark.png" alt="" width="80"></a>
     </div>
     <ul>
-      <li><a id="nav-li" href="index.html">Home</a></li>
-      <li><a id="nav-li" href="index.html#about">About</a></li>
-      <li><a id="nav-li" href="index.html#portfolio">Portfolio</a></li>
-      <li><a id="nav-li" href="index.html#contact">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
     <div class="contact">
       <i class="far fa-envelope"><strong class="roboto pr-1"> t.moran.11@student.scu.edu.au</strong></i>
@@ -35,11 +35,11 @@
   <div class="portfolio-container">
     <section id="portfolio-showcase">
       <div class="portfolio-title">
-        <h1>Gamer Grid</h1>
+        <h1>Stayz Hotel Page</h1>
         <div class="skills-focus">
           <li>Skills Focus</li>
           <div class="skills">
-            <li>CSS Grid</li>
+            <li>Floats</li>
             <li>HTML</li>
             <li>CSS</li>
           </div>
@@ -51,13 +51,22 @@
       </div>
 
       <div class="portfolio-image">
-        <img src="img/main/gamer-grid.jpg" alt="">
+        <img src="img/main/stayz.jpg" alt="" class="image">
+        <a href="stayz.html">
+          <div class="overlay">
+            <div class="text">
+              <i class="far fa-eye fa-2x"></i>
+              <br>
+              Live Preview</div>
+          </div>
+        </a>
       </div>
     </section>
   </div>
   <div class="portfolio-container-bottom">
     <div class="portfolio-full-image">
-      <img src="img/main/gamer-grid-full.jpg" alt="" width="1100">
+      <img src="img/main/stayz-full.jpg" alt="" width="1100">
+
     </div>
 
   </div>
@@ -75,50 +84,19 @@
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
+      var navbar = document.getElementById('navbar');
       var logo = document.getElementById('logo');
-
 
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         logo.className = ('logo-scroll')
-        styleListWhite();
+        navbar.className = ('navbar-scroll');
       } else {
         navbar.className = ('navbar');
         document.getElementById('navbar').style.transition = "all 1s";
         document.getElementById('logo').style.transition = "all 3s";
         logo.className = ('logo');
-        styleListBlack();
-      }
-    };
-
-    //
-    function styleListWhite() {
-      var navbarContact = document.querySelector('.contact');
-      var navbarContactIcons = navbarContact.getElementsByTagName('I');
-      document.getElementById('logo').src = 'img/main/logo.png';
-      var navbar = document.getElementById("navbar");
-      var navbarAnchor = navbar.getElementsByTagName('A');
-      navbar.style.background = '#292929';
-      for (var i = 0; i < navbarAnchor.length; i++) {
-        navbarAnchor[i].style.color = 'white';
-      }
-      for (var i = 0; i < navbarContactIcons.length; i++) {
-        navbarContactIcons[i].style.color = 'white';
       }
     }
-    function styleListBlack() {
-      var navbarContact = document.querySelector('.contact');
-      var navbarContactIcons = navbarContact.getElementsByTagName('I');
-      document.getElementById('logo').src = 'img/main/logo-dark.png';
-      var navbar = document.getElementById("navbar");
-      var navbarAnchor = navbar.getElementsByTagName('A');
-      navbar.style.background = '#fff';
-      for (var i = 0; i < navbarAnchor.length; i++) {
-        navbarAnchor[i].style.color = 'black';
-      }
-      for (var i = 0; i < navbarContactIcons.length; i++) {
-        navbarContactIcons[i].style.color = '#000';
-      }
-    } 
   </script>
 
 </body>
