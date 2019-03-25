@@ -21,10 +21,10 @@
       <a href="#home"><img id="logo" src="img/main/logo-dark.png" alt="" width="80"></a>
     </div>
     <ul>
-      <li><a id="nav-li" href="index.html">Home</a></li>
-      <li><a id="nav-li" href="index.html#about">About</a></li>
-      <li><a id="nav-li" href="index.html#portfolio">Portfolio</a></li>
-      <li><a id="nav-li" href="index.html#contact">Contact</a></li>
+      <li><a href="index.html" class="nav-white-underline">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
     <div class="contact">
       <i class="far fa-envelope"><strong class="roboto pr-1"> t.moran.11@student.scu.edu.au</strong></i>
@@ -76,10 +76,12 @@
 
     function scrollFunction() {
       var logo = document.getElementById('logo');
+      var navbar = document.getElementById('navbar');
 
 
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         logo.className = ('logo-scroll')
+        navbar.classList = ('navbar-scroll');
         styleListWhite();
       } else {
         navbar.className = ('navbar');
@@ -114,6 +116,7 @@
       navbar.style.background = '#fff';
       for (var i = 0; i < navbarAnchor.length; i++) {
         navbarAnchor[i].style.color = 'black';
+
       }
       for (var i = 0; i < navbarContactIcons.length; i++) {
         navbarContactIcons[i].style.color = '#000';

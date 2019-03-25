@@ -2,6 +2,8 @@
 
 body{
 }
+
+
 p{
     margin:0;
     color:#333;
@@ -24,7 +26,13 @@ p{
  }
 
  
- 
+ /* Styling for Scroll Function in JavaScript */
+ .logo-scroll{
+    width:4rem;
+    position: absolute;
+    margin:0 0 0 -1rem;
+ }
+
  #navbar ul {
     display: flex;
     flex:1;
@@ -32,7 +40,6 @@ p{
     list-style: none;
     font-size:1.2rem;
     justify-content: center;
-    
  }
  
  #navbar ul li a {
@@ -48,8 +55,8 @@ p{
  #navbar .logo{
     position: relative;
     margin-left:2rem;
-   flex:1;
-   margin-top:-.1rem;
+    flex:1;
+    margin-top:-.1rem;
  }
 
 
@@ -76,6 +83,7 @@ p{
     height: auto;
   }
   
+  /* Overlay for the Portfolio Pictures */
   .overlay {
     position: absolute;
     top: 0;
@@ -86,7 +94,6 @@ p{
     opacity: 0;
     transition: 1.8s ease;
     background-color: rgb(255, 255, 255);
-    border:1px solid red;
   }
   
   .portfolio-image:hover .overlay {
@@ -164,6 +171,3 @@ p{
 #portfolio-showcase .portfolio-title .skills{
     text-align: right;
 }
-
-
- 

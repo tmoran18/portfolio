@@ -54,12 +54,12 @@
          <div class="portfolio-image">
             <img src="img/main/hhm-law.jpg" alt="" class="image">
             <a href="hhmattorneys.html">
-            <div class="overlay">  
-               <div class="text">
-                  <i class="far fa-eye fa-2x"></i>
-                  <br>
-                  Live Preview</div>
-             </div>
+               <div class="overlay">
+                  <div class="text">
+                     <i class="far fa-eye fa-2x"></i>
+                     <br>
+                     Live Preview</div>
+               </div>
             </a>
          </div>
       </section>
@@ -67,7 +67,7 @@
    <div class="portfolio-container-bottom">
       <div class="portfolio-full-image">
          <img src="img/main/hhm-law-full.jpg" alt="" width="1100">
-         
+
       </div>
 
    </div>
@@ -85,19 +85,53 @@
       window.onscroll = function () { scrollFunction() };
 
       function scrollFunction() {
-         var navbar = document.getElementById('navbar');
          var logo = document.getElementById('logo');
+         var navbar = document.getElementById('navbar');
+
 
          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             logo.className = ('logo-scroll')
-            navbar.className = ('navbar-scroll');
+            navbar.classList = ('navbar-scroll');
+            styleListWhite();
          } else {
             navbar.className = ('navbar');
             document.getElementById('navbar').style.transition = "all 1s";
             document.getElementById('logo').style.transition = "all 3s";
             logo.className = ('logo');
+            styleListBlack();
+         }
+      };
+
+      //
+      function styleListWhite() {
+         var navbarContact = document.querySelector('.contact');
+         var navbarContactIcons = navbarContact.getElementsByTagName('I');
+         document.getElementById('logo').src = 'img/main/logo.png';
+         var navbar = document.getElementById("navbar");
+         var navbarAnchor = navbar.getElementsByTagName('A');
+         navbar.style.background = '#292929';
+         for (var i = 0; i < navbarAnchor.length; i++) {
+            navbarAnchor[i].style.color = 'white';
+         }
+         for (var i = 0; i < navbarContactIcons.length; i++) {
+            navbarContactIcons[i].style.color = 'white';
          }
       }
+      function styleListBlack() {
+         var navbarContact = document.querySelector('.contact');
+         var navbarContactIcons = navbarContact.getElementsByTagName('I');
+         document.getElementById('logo').src = 'img/main/logo-dark.png';
+         var navbar = document.getElementById("navbar");
+         var navbarAnchor = navbar.getElementsByTagName('A');
+         navbar.style.background = '#fff';
+         for (var i = 0; i < navbarAnchor.length; i++) {
+            navbarAnchor[i].style.color = 'black';
+
+         }
+         for (var i = 0; i < navbarContactIcons.length; i++) {
+            navbarContactIcons[i].style.color = '#000';
+         }
+      } 
    </script>
 
 </body>

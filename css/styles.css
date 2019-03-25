@@ -109,17 +109,7 @@ p {
 
 /* Classes used in JavaScript Navbar Color Scoll Effect */
 /* Styling for Navbar on scroll - JavaScript */
-.navbar-scroll{
-   background:#292929;
-   padding:1rem;
-}
 
-/* Styling for Scroll Function in JavaScript */
-.logo-scroll{
-   width:4rem;
-   position: absolute;
-   margin:0 0 0 -1rem;
-}
 
 #navbar ul {
    display: flex;
@@ -168,6 +158,19 @@ p {
   color: transparent;
   background: #fff;
   height: 1px;
+}
+
+/* Styling for Navbar on scroll - JavaScript */
+.navbar-scroll {
+   background:#292929;
+}
+
+
+/* Styling for Scroll Function in JavaScript */
+.logo-scroll{
+   width:4rem;
+   position: absolute;
+   margin:0 0 0 -1rem;
 }
 
 #navbar ul li a:hover:after {
@@ -253,7 +256,36 @@ p {
    margin:0 auto;
    justify-content: center;
  }
+.overlay{
+position: absolute;
+top:0;
+bottom:0;
+right:0;
+left:0;
+height:100%;
+width:100%;
+opacity: 0;
+transition: 1.8s ease;
+   background-color:#292929;
 
+
+}
+
+ .card:hover .overlay {
+   opacity: .88;
+ }
+
+ .text {
+   color: #fff;
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
 /* Class styling to hide the content via JavaScrip */
  #more-cards{
     display:none;
@@ -273,6 +305,7 @@ p {
    width: 30%;
    margin:1rem;
    flex-basis:31.25rem;
+   position: relative;
  }
  
  .card:hover {
