@@ -1,0 +1,144 @@
+.container-fluid {
+   max-width: 1310px;
+   font-family: "Roboto", sans-serif;
+}
+.header-top {
+   display: flex;
+   align-items: flex-end;
+   height: 95px;
+}
+.latest-div {
+   height: 90px;
+}
+.header-top-mobile {
+   display: none;
+   width: 100%;
+   height: 40px;
+}
+.nav-bor {
+   border-right: 1px solid #cccccc;
+   height: 30px;
+}
+
+.nav {
+   border-bottom: 2px solid #f2f2f2;
+   height: 50px;
+}
+
+/* Newsweek Logo Large */
+.svg-lg {
+   fill: white;
+   width: 395px;
+}
+.red-white-bg-txt {
+   background: #f72210;
+   color: #fff;
+}
+
+#dropdownMenu {
+   padding: 0px 10px 7px 12px;
+}
+.lk-btn {
+   text-decoration: none;
+   padding: 10px 12px;
+   font-size: 16px;
+   display: inline;
+   font-weight: 600;
+   letter-spacing: -0.5px;
+}
+
+.lk-2 {
+   color: white;
+   padding: 0px;
+}
+
+.lk-3 {
+   background-color: white;
+   color: #f72210;
+   font-weight: 700;
+   padding: 7px 7px 5px 7px;
+}
+
+#dropdownMenu:focus {
+   outline: none;
+   box-shadow: none;
+}
+.dropdown-menu {
+   height: 60vh;
+   width: 220px;
+   padding-top: 10px;
+   margin-top: 5px;
+}
+.btn-md {
+   height: 42px;
+}
+.bold {
+   font-weight: 900;
+}
+
+.no-border-right {
+   border-right: none;
+}
+
+@media only screen and (max-width: 992px) {
+   .navbar,
+   .delete,
+   #opinion-col {
+      display: none;
+   }
+
+   .header-top,
+   #navbar,
+   .opinion-col {
+      display: none;
+   }
+
+   .header-top-mobile {
+      display: block;
+      padding: 5px 0px 0px 10px;
+   }
+   .svg-sm {
+      fill: white;
+      width: 132px;
+   }
+   .container {
+      padding-top: 50px;
+   }
+   .lk-btn {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1px;
+   }
+   .fa-chevron-right,
+   .fa-search {
+      float: right;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   #featured-column {
+      display: none;
+   }
+}
+
+.category {
+   bottom: 0;
+   left: 0;
+   padding: 5px 15px;
+   background-color: #e6e6ec;
+   font-weight: 700;
+   font-family: arial;
+}
+
+.bor {
+   border: 1px solid black;
+}
+
+.svg-footer {
+   fill: #f72210;
+   width: 236px;
+}
+
+.social-icons {
+   font-size: 25px;
+}
