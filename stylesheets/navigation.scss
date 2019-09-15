@@ -1,5 +1,69 @@
-nav {
-   width: 500px;
-   height: 100px;
-   background: black;
+header {
+   width: 100%;
+   height: 95px;
+   background: $l-black;
+   .logo {
+      padding-left: 1.5rem;
+   }
+   nav {
+      max-width: 1040px;
+      height: 95px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      .menu-container {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         width: 100%;
+         ul.menu:first-child {
+            margin-right: 2rem;
+         }
+         ul.menu {
+            @include horizontal-list;
+            // @include bor;
+            .nav-list:hover {
+               filter: contrast(30%);
+            }
+         }
+         .nav-social-icons {
+            padding: 0 0.6rem;
+            cursor: pointer;
+            :hover {
+               filter: contrast(30%);
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   .menu-container {
+      flex-direction: column;
+      position: absolute;
+      top: 5rem;
+      background: $l-black;
+      ul.menu.nav-menu {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         width: 100%;
+         padding: 0;
+         a {
+            padding: 0;
+         }
+         li {
+            padding: 1rem 0;
+            border-bottom: 0.5px solid $ccc;
+            width: 100%;
+         }
+      }
+   }
+   header nav .menu-container ul.menu:first-child {
+      margin: 0;
+   }
+   .nav-menu a:first-child {
+      border-top: 0.5px solid $ccc;
+      margin-top: 1rem;
+   }
 }

@@ -1,4 +1,14 @@
-h1 {
-   font-size: 50px;
-   color: blue;
+@import "normalize";
+@import "variables";
+@import "navigation";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+
+// Accessorie Styles
+.ma {
+   margin: auto;
+} // Margin Auto
+
+body {
+   font-family: "Raleway", sans-serif, Arial;
+   font-size: 10px;
 }

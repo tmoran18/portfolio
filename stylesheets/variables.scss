@@ -1,0 +1,34 @@
+// Variables
+$l-black: #333;
+$white: #fff;
+$red: #d50000;
+$ccc: #ccc;
+
+// Mixins
+@mixin flex-jac {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin bor {
+   border: 1px solid $red;
+}
+
+@mixin reset-list {
+   list-style: none;
+}
+
+@mixin horizontal-list {
+   @include reset-list;
+
+   li {
+      display: inline-block;
+   }
+   a {
+      color: $white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding-left: 2rem;
+   }
+}
