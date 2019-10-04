@@ -16,6 +16,8 @@ header {
          justify-content: flex-end;
          align-items: center;
          width: 100%;
+         top: -350px;
+         transition: all 0.7s ease-in-out;
          ul.menu:first-child {
             margin-right: 2rem;
          }
@@ -35,6 +37,53 @@ header {
          }
       }
    }
+}
+
+// Hamburger Menu Styles
+.hamburger {
+   position: absolute;
+   top: 4.5rem;
+   right: 7%;
+   margin-left: -2rem;
+   margin-top: -45px;
+   width: 2rem;
+   height: 45px;
+   z-index: 5;
+   cursor: pointer;
+   display: none;
+}
+
+.hamburger div {
+   position: relative;
+   width: 3rem;
+   height: 4px;
+   border-radius: 3px;
+   background-color: $white;
+   margin-top: 8px;
+   transition: all 0.3s ease-in-out;
+}
+
+.hamburger-input {
+   display: none;
+}
+
+// Hamburger Menu Animations
+#toggle:checked + .hamburger .top-bun {
+   transform: rotate(-45deg);
+   margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+   opacity: 0;
+   transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+   transform: rotate(45deg);
+   margin-top: -3px;
+}
+
+#toggle:checked + .hamburger + .nav {
+   top: 0;
+   transform: scale(1);
 }
 
 @media only screen and (max-width: 900px) {
@@ -58,6 +107,9 @@ header {
             width: 100%;
          }
       }
+      .menu:nth-child(2) {
+         padding-left: 0;
+      }
    }
    header nav .menu-container ul.menu:first-child {
       margin: 0;
@@ -65,5 +117,8 @@ header {
    .nav-menu a:first-child {
       border-top: 0.5px solid $ccc;
       margin-top: 1rem;
+   }
+   .hamburger {
+      display: block;
    }
 }
