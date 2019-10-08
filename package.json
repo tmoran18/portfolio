@@ -6,14 +6,6 @@
    "repository": "https://github.com/tmoran18/portfolio.git",
    "author": "Tim Moran",
    "license": "MIT",
-   "scripts": {
-      "start": "parcel *.html",
-      "build": "parcel build index.html --public-url ./"
-   },
-   "devDependencies": {
-      "cssnano": "^4.1.10",
-      "node-sass": "^4.12.0",
-      "parcel-bundler": "^1.12.3",
-      "sass": "^1.23.0"
-   }
+   "scripts": {},
+   "devDependencies": {}
 }
