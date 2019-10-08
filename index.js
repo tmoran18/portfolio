@@ -3,6 +3,8 @@ var menu = document.querySelector('.menu-container');
 var hamburger = document.getElementById('toggle');
 var toggleStatus = 0;
 
+const swup = new Swup();
+
 // If the window is below Media query size
 //   uncheck the hamburger Input
 //   close the mobile navigation

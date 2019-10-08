@@ -7,5 +7,6 @@
    "author": "Tim Moran",
    "license": "MIT",
    "scripts": {},
-   "devDependencies": {}
+   "devDependencies": {},
+   "dependencies": {}
 }

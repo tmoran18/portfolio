@@ -205,3 +205,26 @@ footer ul.menu a {
    font-size: 0.7rem;
    border-top: none;
 }
+
+/* SWUP */
+
+.transition-fade {
+   transition: all 0.5s ease-out;
+   opacity: 1;
+   animation: 0.5s scalein ease forwards;
+}
+
+html.is-animating .transition-fade {
+   opacity: 0;
+}
+
+main {
+   width: 700px;
+   height: 700px;
+   margin: auto;
+   background: black;
+}
+
+p {
+   color: white;
+}
