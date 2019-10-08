@@ -1,6 +1,7 @@
 @import "normalize";
 @import "variables";
 @import "navigation";
+@import "footer";
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
 
 // Accessorie Styles
@@ -11,4 +12,15 @@
 body {
    font-family: "Raleway", sans-serif, Arial;
    font-size: 10px;
+   height: 100vh;
+}
+.page-container {
+   min-height: 100vh;
+}
+
+main {
+   overflow: auto;
+   padding-bottom: 90px;
+   border: 1px solid red;
+   height: 70vh;
 }

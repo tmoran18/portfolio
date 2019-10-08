@@ -1,5 +1,6 @@
 import './stylesheets/styles.scss';
 import { CLIENT_RENEG_LIMIT } from 'tls';
+const swup = new Swup();
 
 // Mobile Menu Toggle
 var menu = document.querySelector('.menu-container');
