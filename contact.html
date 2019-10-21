@@ -36,7 +36,7 @@
             <a href="">
               <li class="nav-list">PORTFOLIO</li>
             </a>
-            <a href="/contact.html">
+            <a href="">
               <li class="nav-list">CONTACT</li>
             </a>
           </ul>
@@ -51,41 +51,27 @@
       </nav>
     </header>
     <main>
-      <section class="home">
-        <div class="hero-container">
-          <div class="hero-top">
-            <div class="hero-title">
-              <h1>Hi I'm Tim</h1>
-              <h2>I'm a Front End Developer</h2>
+      <section class="contact">
+        <img src="./images/map.jpg" class="form-bg-image" alt="Grey map of Brisbane City">
+        <div class="form-wrapper">
+          <div class="form-container">
+            <div class="form-circle-top">
+              <img src="./images/phone-book.png" width="40px" alt="">
             </div>
-            <div class="hero-cta-buttons">
-              <a href="/about.html"><button class="primary-btn">About</button></a>
-              <button class="primary-btn">Work</button>
-            </div>
-            <img src="images/hero-background-test.jpg" alt="">
+            <h2>Get in Touch</h2>
+            <form action="">
+              <div class="form-name-fields">
+                <input class="text-m" aria-label="First Name" type="text" name="First-Name" placeholder="First Name" required />
+                <input class="text-m" aria-label="Last Name" type="text" name="Last-Name" placeholder="Last Name" required />
+              </div>
+              <input class="text-m" aria-label="email" type="email" name="email" placeholder="Your email address" required />
+              <div class="textarea-message-container">
+                <textarea class="text-m messageArea" onfocus="focus(this)" aria-label="message" rows="4" name="message" placeholder="Write your message here ..."></textarea>
+              </div>
+              <input type="submit" value="Submit" />
+            </form>
           </div>
         </div>
-        <div class="hero-bottom">
-          <h3 class="text-m">CHECK OUT MY LATEST WORK</h3>
-          <div class="projects-container">
-            <ul class="projects-list">
-              <li class="left-project-box project-thumb">
-                <img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,q_100,w_320/v1570795942/portfolio/stickerdev-thumb_mq2rkv.jpg" alt="">
-                <h4>Stickerdev.tech</h4>
-                <p>Static eCommerce Website</p>
-              </li>
-              <li class="mid-project-box project-thumb"><img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,w_320/v1571442636/portfolio/budget-thumbnail_dremnj.jpg" alt="">
-                <h4>JS Budget</h4>
-                <p>JavaScript Budget App</p>
-              </li>
-              <li class="right-project-box project-thumb"><img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,w_320/v1571442635/portfolio/rsp-thumb_ua4q3m.jpg" alt="">
-                <h4>Rock Scissor Paper</h4>
-                <p>JavaScript Rock Scissors Paper App</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
       </section>
       <footer>
         <div class="footer-container">
@@ -98,11 +84,10 @@
           </ul>
         </div>
       </footer>
-  </div>
-  </main>
+    </main>
 
-  <script src="swup.min.js"></script>
-  <script src="index.js"></script>
+    <script src="swup.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
