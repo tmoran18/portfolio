@@ -28,14 +28,14 @@ function mobileNav() { // Wrapper function
   function openNav() {
     menu.style.top = ("90px");
     toggleStatus = 1;
-    document.querySelector('.form-container').style.transform = "translateY(17rem)";
+    // document.querySelector('.form-wrapper').style.transform = "translateY(17rem)";
     console.log("opening");
   };
   // Closes the DropDown mobile Navigation
   function closeNav() {
     menu.style.top = ("-350px");
     toggleStatus = 0;
-    document.querySelector('.form-container').style.transform = "translateY(0)";
+    // document.querySelector('.form-wrapper').style.transform = "translateY(0)";
     console.log("closing");
   };
   // Toggles the opening and closing of the mobile navigation
@@ -53,5 +53,44 @@ function mobileNav() { // Wrapper function
   hamburger.addEventListener('click', toggleMenu);
 
 
+  //  Tool Tip Functions
+  var emailIcon = document.querySelector(".email-icon");
+  var toolTip = document.querySelector(".tooltiptext");
+  console.log(toolTip);
+
+  emailIcon.onmouseover = function () { mouseOver() };
+  emailIcon.onmouseout = function () { mouseOut() };
+  function mouseOver() {
+    toolTip.style.visibility = "visible";
+  }
+  function mouseOut() {
+    toolTip.style.visibility = "hidden";
+  }
+
+  function tooltipTimer() {
+    toolTip.innerHTML = 'Email Copied!';
+    toolTip.style.color = '#000';
+    toolTip.style.background = "#D5F5E3";
+    toolTip.style.fontWeight = '600';
+    toolTip.style.visibility = "visible";
+    setTimeout(function () {
+      // Timer function to set tooltip back to normal style
+      toolTip.innerHTML = 'Click to copy my email address to your clipboard';
+      toolTip.style.fontSize = '14px';
+      toolTip.style.background = "#fafafa";
+      toolTip.style.fontWeight = '400';
+      toolTip.style.color = '#000';
+      toolTip.style.visibility = "hidden";
+    }, 1000);
+  }
+
+  // ClipboardJS
+  const clipboard = new ClipboardJS('.email');
+  clipboard.on('success', function () {
+    tooltipTimer();
+  });
+  clipboard.on('error', function () {
+    console.log('Error');
+  });
 };
 
