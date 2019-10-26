@@ -281,12 +281,12 @@ header nav .menu-container .nav-social-icons :hover {
 }
 
 /* Opacity hover functions on work thumbnails */
-.hero-bottom ul:hover li {
+.portfolio-grid:hover .grid-item {
    opacity: 0.4;
    transition: all 0.2s ease;
 }
 
-.hero-bottom ul:hover li:hover {
+.portfolio-grid:hover .grid-item:hover {
    opacity: 1;
    border: 1px solid rgb(206, 206, 206);
    transition: all 0.2s ease;
@@ -323,11 +323,12 @@ header nav .menu-container .nav-social-icons :hover {
 
 .portfolio-grid {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
    max-width: 1040px;
    margin: auto;
    grid-gap: 30px;
    padding-top: 4rem;
+   justify-items: center;
 }
 
 .grid-item {
@@ -336,6 +337,7 @@ header nav .menu-container .nav-social-icons :hover {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
    border-radius: 3px;
    padding: 0.5rem;
+   cursor: pointer;
 }
 
 /*********************** Footer ***********************************/
