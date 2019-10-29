@@ -1,10 +1,33 @@
-.flex {
-   display: flex;
+/* 1. Font Sizes */
+.font-10 {
+   font-size: 10;
+}
+.font-16 {
+   font-size: 16px;
+}
+.font-20 {
+   font-size: 20px;
+}
+.font-30 {
+   font-size: 30px;
+}
+.font-40 {
+   font-size: 40px;
 }
 
-.justify-cont-sp-bt {
-   justify-content: space-between;
+.font-weight-300 {
+   font-weight: 300;
 }
+
+.font-weight-400 {
+   font-weight: 400;
+}
+
+.font-weight-700 {
+   font-weight: 700;
+}
+
+/* 2. Colors */
 
 .bg-dark {
    background: #333;
@@ -19,153 +42,73 @@
    background: #fff;
 }
 
-.inset-shadow {
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset;
-}
+/* 3. Margins */
 
-.shadow {
-   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+.mt1 {
+   margin-top: 1rem;
 }
-
-.font-s {
-   font-size: 10px;
+.mt2 {
+   margin-top: 2rem;
 }
-.font-m {
-   font-size: 16px;
+.mt3 {
+   margin-top: 3rem;
 }
-
-.font-l {
-   font-size: 40px;
+.mt4 {
+   margin-top: 4rem;
 }
-.line-height-m {
-   line-height: 2;
+.mt5 {
+   margin-top: 5rem;
+}
+.mb1 {
+   margin-bottom: 1rem;
+}
+.mb2 {
+   margin-bottom: 2rem;
+}
+.mb3 {
+   margin-bottom: 3rem;
+}
+.mb4 {
+   margin-bottom: 4rem;
+}
+.mb5 {
+   margin-bottom: 5rem;
 }
 
 .ma {
    margin: auto;
 }
-:root {
-   --space-1: 0.5rem;
-   --space-2: 1rem;
-   --space-3: 2rem;
-   --space-4: 4rem;
+
+/* 4. Line Heights */
+.line-h-1-5 {
+   line-height: 1.5;
 }
-.p0 {
-   padding: 0;
-}
-.pt0 {
-   padding-top: 0;
-}
-.pr0 {
-   padding-right: 0;
-}
-.pb0 {
-   padding-bottom: 0;
-}
-.pl0 {
-   padding-left: 0;
-}
-.px0 {
-   padding-left: 0;
-   padding-right: 0;
-}
-.py0 {
-   padding-top: 0;
-   padding-bottom: 0;
+.line-h-2 {
+   line-height: 2;
 }
 
-.p1 {
-   padding: var(--space-1);
+/* 5. Flexs */
+.flex {
+   display: flex;
 }
-.pt1 {
-   padding-top: var(--space-1);
+.flex-wrap {
+   flex-wrap: wrap;
 }
-.pr1 {
-   padding-right: var(--space-1);
+.flex-dir-col {
+   flex-direction: column;
 }
-.pb1 {
-   padding-bottom: var(--space-1);
+.just-cont-cent {
+   justify-content: center;
 }
-.pl1 {
-   padding-left: var(--space-1);
-}
-.py1 {
-   padding-top: var(--space-1);
-   padding-bottom: var(--space-1);
-}
-.px1 {
-   padding-left: var(--space-1);
-   padding-right: var(--space-1);
+.align-item-cent {
+   align-items: center;
 }
 
-.p2 {
-   padding: var(--space-2);
-}
-.pt2 {
-   padding-top: var(--space-2);
-}
-.pr2 {
-   padding-right: var(--space-2);
-}
-.pb2 {
-   padding-bottom: var(--space-2);
-}
-.pl2 {
-   padding-left: var(--space-2);
-}
-.py2 {
-   padding-top: var(--space-2);
-   padding-bottom: var(--space-2);
-}
-.px2 {
-   padding-left: var(--space-2);
-   padding-right: var(--space-2);
+/* 6. Shadows */
+.shadow-inset {
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset;
 }
 
-.p3 {
-   padding: var(--space-3);
-}
-.pt3 {
-   padding-top: var(--space-3);
-}
-.pr3 {
-   padding-right: var(--space-3);
-}
-.pb3 {
-   padding-bottom: var(--space-3);
-}
-.pl3 {
-   padding-left: var(--space-3);
-}
-.py3 {
-   padding-top: var(--space-3);
-   padding-bottom: var(--space-3);
-}
-.px3 {
-   padding-left: var(--space-3);
-   padding-right: var(--space-3);
-}
-
-.p4 {
-   padding: var(--space-4);
-}
-.pt4 {
-   padding-top: var(--space-4);
-}
-.pr4 {
-   padding-right: var(--space-4);
-}
-.pb4 {
-   padding-bottom: var(--space-4);
-}
-.pl4 {
-   padding-left: var(--space-4);
-}
-.py4 {
-   padding-top: var(--space-4);
-   padding-bottom: var(--space-4);
-}
-.px4 {
-   padding-left: var(--space-4);
-   padding-right: var(--space-4);
+.shadow {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
 }
