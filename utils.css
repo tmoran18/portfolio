@@ -1,0 +1,171 @@
+.flex {
+   display: flex;
+}
+
+.justify-cont-sp-bt {
+   justify-content: space-between;
+}
+
+.bg-dark {
+   background: #333;
+}
+.bg-dark-grey {
+   background: #f5f5f5;
+}
+.bg-light-grey {
+   background: #fafafa;
+}
+.bg-white {
+   background: #fff;
+}
+
+.inset-shadow {
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset;
+}
+
+.shadow {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+}
+
+.font-s {
+   font-size: 10px;
+}
+.font-m {
+   font-size: 16px;
+}
+
+.font-l {
+   font-size: 40px;
+}
+.line-height-m {
+   line-height: 2;
+}
+
+.ma {
+   margin: auto;
+}
+:root {
+   --space-1: 0.5rem;
+   --space-2: 1rem;
+   --space-3: 2rem;
+   --space-4: 4rem;
+}
+.p0 {
+   padding: 0;
+}
+.pt0 {
+   padding-top: 0;
+}
+.pr0 {
+   padding-right: 0;
+}
+.pb0 {
+   padding-bottom: 0;
+}
+.pl0 {
+   padding-left: 0;
+}
+.px0 {
+   padding-left: 0;
+   padding-right: 0;
+}
+.py0 {
+   padding-top: 0;
+   padding-bottom: 0;
+}
+
+.p1 {
+   padding: var(--space-1);
+}
+.pt1 {
+   padding-top: var(--space-1);
+}
+.pr1 {
+   padding-right: var(--space-1);
+}
+.pb1 {
+   padding-bottom: var(--space-1);
+}
+.pl1 {
+   padding-left: var(--space-1);
+}
+.py1 {
+   padding-top: var(--space-1);
+   padding-bottom: var(--space-1);
+}
+.px1 {
+   padding-left: var(--space-1);
+   padding-right: var(--space-1);
+}
+
+.p2 {
+   padding: var(--space-2);
+}
+.pt2 {
+   padding-top: var(--space-2);
+}
+.pr2 {
+   padding-right: var(--space-2);
+}
+.pb2 {
+   padding-bottom: var(--space-2);
+}
+.pl2 {
+   padding-left: var(--space-2);
+}
+.py2 {
+   padding-top: var(--space-2);
+   padding-bottom: var(--space-2);
+}
+.px2 {
+   padding-left: var(--space-2);
+   padding-right: var(--space-2);
+}
+
+.p3 {
+   padding: var(--space-3);
+}
+.pt3 {
+   padding-top: var(--space-3);
+}
+.pr3 {
+   padding-right: var(--space-3);
+}
+.pb3 {
+   padding-bottom: var(--space-3);
+}
+.pl3 {
+   padding-left: var(--space-3);
+}
+.py3 {
+   padding-top: var(--space-3);
+   padding-bottom: var(--space-3);
+}
+.px3 {
+   padding-left: var(--space-3);
+   padding-right: var(--space-3);
+}
+
+.p4 {
+   padding: var(--space-4);
+}
+.pt4 {
+   padding-top: var(--space-4);
+}
+.pr4 {
+   padding-right: var(--space-4);
+}
+.pb4 {
+   padding-bottom: var(--space-4);
+}
+.pl4 {
+   padding-left: var(--space-4);
+}
+.py4 {
+   padding-top: var(--space-4);
+   padding-bottom: var(--space-4);
+}
+.px4 {
+   padding-left: var(--space-4);
+   padding-right: var(--space-4);
+}

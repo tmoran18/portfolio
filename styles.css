@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
 
-.ma {
-   margin: auto;
-}
 h1,
 h2,
 h3,
@@ -21,25 +18,7 @@ body {
 } */
 
 /******************* Utilities ********************/
-.bg-dark {
-   background: #333;
-}
-.bg-dark-grey {
-   background: #f5f5f5;
-}
-.bg-light-grey {
-   background: #fafafa;
-}
-.bg-white {
-   background: #fff;
-}
 
-.text-s {
-   font-size: 10px;
-}
-.text-m {
-   font-size: 16px;
-}
 /******************* Navigation ********************/
 header {
    width: 100%;
@@ -231,7 +210,6 @@ header nav .menu-container .nav-social-icons :hover {
 .hero-bottom {
    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset;
    padding: 2rem;
-   background: #fafafa;
    text-align: center;
 }
 
@@ -339,6 +317,8 @@ header nav .menu-container .nav-social-icons :hover {
    padding: 0.5rem;
    cursor: pointer;
 }
+
+/***********************Portfolio Projects***********************************/
 
 /*********************** Footer ***********************************/
 
@@ -525,6 +505,36 @@ html.is-animating .transition-fade {
    .tooltip .tooltiptext {
       margin-left: -220px;
       top: 7px;
+   }
+   /* Portfolio Projects - change flex direction */
+   .top-container {
+      padding-top: 1rem;
+   }
+   .container-row {
+      flex-direction: column;
+      margin: 1rem;
+      padding-bottom: 0;
+   }
+   .top-container-text {
+      width: 100%;
+      margin-top: 0;
+   }
+   .top-container-heading {
+      font-size: 20px;
+   }
+   .top-container-img {
+      margin: auto;
+      width: 80%;
+   }
+   .top-container-heading br {
+      display: none;
+   }
+   .bottom-container-img {
+      justify-content: center;
+   }
+   .bottom-container-img img {
+      width: 100%;
+      height: auto;
    }
 }
 
