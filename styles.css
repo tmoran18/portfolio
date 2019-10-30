@@ -9,56 +9,49 @@ body {
 /******************* Utilities ********************/
 
 /******************* Navigation ********************/
-header {
+.header {
    width: 100%;
    height: 95px;
    position: sticky;
    background: #333;
 }
-header .logo {
-   padding-left: 1.5rem;
-}
-header nav {
-   max-width: 1040px;
 
+.nav {
+   max-width: 1040px;
    height: 95px;
-   margin: auto;
-   display: flex;
-   align-items: center;
 }
-header nav .menu-container {
-   display: flex;
+
+.menu-container {
    justify-content: flex-end;
-   align-items: center;
    width: 100%;
    top: -350px;
    transition: all 0.7s ease-in-out;
-   z-index: 99;
+   /* z-index: 99; */
 }
-header nav .menu-container ul.menu:first-child {
+.menu-container ul.menu:first-child {
    margin-right: 2rem;
 }
-header nav .menu-container ul.menu .nav-list {
+.menu-container ul.menu .nav-list {
    list-style: none;
 }
 
-nav .menu-container .menu li {
+.menu-container .menu li {
    display: inline-block;
 }
-header nav .menu-container .menu a {
+.menu-container .menu a {
    color: #fff;
    text-decoration: none;
    font-size: 1rem;
    padding-left: 2rem;
 }
-header nav .menu-container ul.menu .nav-list:hover {
+.menu-container ul.menu .nav-list:hover {
    filter: contrast(30%);
 }
-header nav .menu-container .nav-social-icons {
+.menu-container .nav-social-icons {
    padding: 0 0.6rem;
    cursor: pointer;
 }
-header nav .menu-container .nav-social-icons :hover {
+.menu-container .nav-social-icons :hover {
    filter: contrast(30%);
 }
 
