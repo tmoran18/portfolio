@@ -6,8 +6,9 @@ body {
    height: 100vh;
 }
 
-/******************* Utilities ********************/
-
+a {
+   text-decoration: none;
+}
 /******************* Navigation ********************/
 .header {
    width: 100%;
@@ -26,7 +27,7 @@ body {
    width: 100%;
    top: -350px;
    transition: all 0.7s ease-in-out;
-   /* z-index: 99; */
+   z-index: 99;
 }
 .menu-container ul.menu:first-child {
    margin-right: 2rem;
@@ -74,7 +75,6 @@ body {
    width: 3rem;
    height: 4px;
    border-radius: 3px;
-   background-color: #fff;
    margin-top: 8px;
    transition: all 0.3s ease-in-out;
 }
@@ -98,18 +98,16 @@ body {
    transform: rotate(45deg);
    margin-top: -3px;
 }
-
+/* ToolTip for Clipboard JS */
 .tooltip {
    position: relative;
    display: inline-block;
-   border-bottom: 1px dotted black;
 }
+
 .tooltip .tooltiptext {
    visibility: hidden;
-   width: 220px;
-   background-color: #fafafa;
+   width: 14rem;
    color: #000;
-   text-align: center;
    font-size: 14px;
    border-radius: 6px;
    padding: 15px 35px;
@@ -142,7 +140,6 @@ body {
    flex-direction: column;
    max-width: 1040px;
    margin: auto;
-   text-align: center;
 }
 
 .hero-container img {
@@ -186,7 +183,6 @@ body {
 .hero-bottom {
    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset;
    padding: 2rem;
-   text-align: center;
 }
 
 .projects-container {
@@ -205,6 +201,7 @@ body {
 }
 
 .portfolio-project-heading {
+   color: #333;
    font-size: 18px;
    font-weight: 600;
    text-align: left;
@@ -212,6 +209,7 @@ body {
 }
 
 .portfolio-project-subheading {
+   color: #333;
    font-size: 16px;
    text-align: left;
    margin: 0;
@@ -236,8 +234,8 @@ body {
    position: relative;
    z-index: 1;
    overflow: hidden;
-   text-align: center;
 }
+
 .hero-bottom h3:before,
 .hero-bottom h3:after {
    position: absolute;
@@ -265,7 +263,7 @@ body {
    max-width: 1040px;
    margin: auto;
    grid-gap: 30px;
-   padding-top: 4rem;
+   padding: 4rem 2rem;
    justify-items: center;
 }
 
@@ -278,7 +276,89 @@ body {
 }
 
 /***********************Portfolio Projects***********************************/
+/* Component 1 - Heading, subheading, paragraph and image */
+.row-container {
+   max-width: 1040px;
+   margin: auto;
+   display: flex;
+}
 
+.left-section-subheading {
+   display: flex;
+   justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+   width: 50%;
+   padding: 2rem;
+}
+.left-section h2,
+h4 {
+   padding: 0;
+   margin: 0;
+}
+
+.left-section p {
+   line-height: 2;
+   margin-top: 1rem;
+   font-size: 16px;
+}
+.right-section {
+   text-align: center;
+}
+
+.right-section img {
+   width: 100%;
+   height: auto;
+}
+
+hr {
+   margin: 1rem 0;
+}
+
+.view-button {
+   font-size: 16px;
+   border: 1px solid #333;
+   padding: 1rem 2.5rem;
+   border-radius: 100px;
+   background: none;
+   margin-top: 2rem;
+}
+
+.view-button:hover {
+   background: #333;
+   color: white;
+}
+
+/* Component 1 Media Queries */
+@media only screen and (max-width: 900px) {
+   .row-container {
+      flex-direction: column;
+   }
+   .left-section,
+   .right-section {
+      width: auto;
+   }
+   .left-section {
+      margin-top: -1rem;
+   }
+   .left-section h2 {
+      font-size: 1.5rem;
+   }
+   .right-section {
+      padding: 0;
+   }
+   .right-section img {
+      width: 80%;
+   }
+}
+
+/* Component 2 */
+.short-row {
+   max-width: 800px;
+   padding: 2rem;
+}
 /*********************** Footer ***********************************/
 
 footer {

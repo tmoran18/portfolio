@@ -15,7 +15,12 @@ var mobileNavStart = new mobileNav();
 function mobileNav() { // Wrapper function
   var menu = document.querySelector('.menu-container');
   var hamburger = document.getElementById('toggle');
+  var anchorLinks = document.getElementsByTagName("a");
   var toggleStatus = 0;
+  closeNav();
+  for (var i = 0; i < anchorLinks.length; i++) {
+    anchorLinks[i].addEventListener("click", closeNav, false);
+  };
   // If the window is below Media query size 
   //  uncheck the hamburger Input close the mobile navigation
   function checkWindowSize(x) {
@@ -24,19 +29,18 @@ function mobileNav() { // Wrapper function
       closeNav();
     }
   };
+
   // Opens the DropDown mobile Navigation
   function openNav() {
     menu.style.top = ("90px");
     toggleStatus = 1;
     // document.querySelector('.form-wrapper').style.transform = "translateY(17rem)";
-    console.log("opening");
   };
   // Closes the DropDown mobile Navigation
   function closeNav() {
     menu.style.top = ("-350px");
     toggleStatus = 0;
     // document.querySelector('.form-wrapper').style.transform = "translateY(0)";
-    console.log("closing");
   };
   // Toggles the opening and closing of the mobile navigation
   function toggleMenu() {
@@ -44,6 +48,7 @@ function mobileNav() { // Wrapper function
       openNav();
     } else if (toggleStatus === 1) {
       closeNav();
+      console.log("Nav Closed");
     }
   };
   var windowSize = window.matchMedia("(max-width: 900px)")

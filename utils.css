@@ -80,7 +80,7 @@
 }
 
 .pl1 {
-   padding-left:1rem;
+   padding-left: 1rem;
 }
 
 /* 4. Line Heights */
@@ -89,6 +89,10 @@
 }
 .line-h-2 {
    line-height: 2;
+}
+
+.text-cent {
+   text-align: center;
 }
 
 /* 5. Flexs */
@@ -115,4 +119,9 @@
 
 .shadow {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+}
+
+h2 {
+   margin: 0;
+   padding: 0;
 }
