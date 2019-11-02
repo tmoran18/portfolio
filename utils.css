@@ -42,6 +42,10 @@
    background: #fff;
 }
 
+.font-dark {
+   color: #333;
+}
+
 /* 3. Margins */
 
 .mt1 {
@@ -83,6 +87,10 @@
    padding-left: 1rem;
 }
 
+.pb2 {
+   padding-bottom: 2rem;
+}
+
 /* 4. Line Heights */
 .line-h-1-5 {
    line-height: 1.5;
@@ -112,6 +120,10 @@
    align-items: center;
 }
 
+.just-self-left {
+   justify-self: flex-start;
+}
+
 /* 6. Shadows */
 .shadow-inset {
    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset;
@@ -124,4 +136,9 @@
 h2 {
    margin: 0;
    padding: 0;
+}
+
+/* 7. Links */
+.link {
+   font-weight: 700;
 }

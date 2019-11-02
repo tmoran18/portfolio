@@ -331,10 +331,38 @@ hr {
    color: white;
 }
 
+.grid-parent-2x2 {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   max-width: 1040px;
+   margin: auto;
+   justify-items: center;
+   grid-gap: 30px;
+}
+
+.grid-item-large img {
+   width: 100%;
+   height: auto;
+}
+
+.flex-item {
+   max-width: 300px;
+   padding: 1rem;
+   margin: 1rem;
+}
+
+.long-row {
+   max-width: 1200px;
+}
+
 /* Component 1 Media Queries */
 @media only screen and (max-width: 900px) {
-   .row-container {
+   .row-container,
+   .short-row {
       flex-direction: column;
+      padding-bottom: 0 !important	;
+      margin-bottom: 0 !important;
+      align-items: center;
    }
    .left-section,
    .right-section {
@@ -351,6 +379,9 @@ hr {
    }
    .right-section img {
       width: 80%;
+   }
+   .flex-item {
+      border: 1px solid #ccc;
    }
 }
 
