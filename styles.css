@@ -9,6 +9,10 @@ body {
 a {
    text-decoration: none;
 }
+
+.hidden {
+   visibility: hidden;
+}
 /******************* Navigation ********************/
 .header {
    width: 100%;
@@ -54,6 +58,11 @@ a {
 }
 .menu-container .nav-social-icons :hover {
    filter: contrast(30%);
+}
+
+.social-menu a {
+   padding: 0 !important;
+   margin: 0;
 }
 
 /* Hamburger Menu Styles */
@@ -254,7 +263,11 @@ a {
    margin-left: -17rem;
    text-align: right;
 }
-
+/******************* About ********************/
+.portfolio-image {
+   border: 1px solid rgba(224, 224, 224, 0.637);
+   border-radius: 100%;
+}
 /***********************Portfolio***********************************/
 
 .portfolio-grid {
