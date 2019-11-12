@@ -267,7 +267,10 @@ a {
 .portfolio-image {
    border: 1px solid rgba(224, 224, 224, 0.637);
    border-radius: 100%;
+   box-shadow: 0px 15px 36px rgba(0, 0, 0, 0.50);
 }
+
+
 /***********************Portfolio***********************************/
 
 .portfolio-grid {
