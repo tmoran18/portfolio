@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tim Moran - Portfolio</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="utils.css">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../utils.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 </head>
 
@@ -63,54 +63,56 @@
       </nav>
     </header>
     <main>
-      <!-- Main Section -->
-      <section class="home">
-        <div class="hero-container text-cent">
-          <div class="hero-top">
-            <div class="hero-title">
-              <h1 class="font-weight-400">Hi I'm Tim</h1>
-              <h2 class="font-weight-400">I'm a Front End Developer</h2>
+      <!-- Main Page Content -->
+      <section class="white">
+        <div class="row-container mt2">
+          <div class="left-section">
+            <h2 class="font-40">Todo App - JavaScript </h2>
+            <hr>
+            <div class="left-section-subheading">
+              <h4 class="font-16">Tim's Todo's</h4>
+              <h4 class="font-16">December, 2019</h4>
             </div>
-            <div class="hero-cta-buttons">
-              <a href="/about.html"><button class="primary-btn">About</button></a>
-              <a href="/portfolio.html"><button class="primary-btn">Work</button></a>
+            <p>This JavaScript Todo list app was a great way to solidify my understanding of Immediately-invoked Function Expressions and Closures. The app uses localStorage to allow the data to
+              persist after closing or refreshing the browser.</p>
+          </div>
+          <div class="right-section just-space-between">
+            <img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,q_100,w_320/v1575028686/portfolio/tims-todos-thumbnail_gaudjb.jpg" class="shadow" alt="">
+            <div class="buttons-container flex just-space-between">
+              <a href="https://github.com/tmoran18/Tims-Todos" target="_blank"><button class="view-button">Source Code</button></a>
+              <a href="https://tims-todos.netlify.com/" target="_blank"><button class="view-button">View Site</button></a>
             </div>
-            <img src="images/hero-background-test.jpg" alt="">
           </div>
         </div>
-        <div class="hero-bottom bg-light-grey text-cent">
-          <h3 class="font-16 text-cent">CHECK OUT MY LATEST WORK</h3>
-          <div class="projects-container">
-            <div class="portfolio-grid">
-              <a href="/portfolio/sticker-dev-project.html">
-                <div class="grid-item shadow"><img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,q_100,w_320/v1570795942/portfolio/stickerdev-thumb_mq2rkv.jpg" class="shadow" alt="">
-                  <h4 class="portfolio-project-heading">Stickerdev.tech</h4>
-                  <p class="portfolio-project-subheading">eCommerce Website</p>
-                </div>
-              </a>
-              <a href="/portfolio/tims-todos.html">
-                <div class="grid-item shadow"><img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,q_100,w_320/v1575028686/portfolio/tims-todos-thumbnail_gaudjb.jpg" class="shadow"
-                    alt="">
-                  <h4 class="portfolio-project-heading">Tim's Todo's</h4>
-                  <p class="portfolio-project-subheading">JavaScript Todo App</p>
-                </div>
-              </a>
-              <a href="https://rock-scissors-papers.netlify.com/" target="_blank">
-                <div class="grid-item shadow"><img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,w_320/v1571442635/portfolio/rsp-thumb_ua4q3m.jpg" class="shadow" alt="">
-                  <h4 class="portfolio-project-heading">Rock Scissor Paper</h4>
-                  <p class="portfolio-project-subheading">JavaScript Rock Scissors Paper App</p>
-                </div>
-              </a>
-            </div>
-          </div>
+      </section>
+      <section class="bg-dark-grey mt2 shadow-inset">
+        <div class="row-container short-row flex-dir-col">
+          <h2 class="font-30">Skills</h2>
+          <ul class="font-20 line-h-2 pl1">
+            <li>MVC Module Pattern</li>
+            <li>Data Privacy using IIFE's and Closures</li>
+            <li>localStorage, persisting data</li>
+            <li>Custom CSS Checkboxes</li>
+            <li>JavaScript Date object</li>
+            <li>Event Delegation</li>
+            <li>CRUD Functions</li>
+          </ul>
+
+        </div>
+
+      </section>
+      <section class="white shadow-inset">
+        <div class="row-container short-row flex just-cont-cent">
+          <img style="max-width:300px;" src="https://res.cloudinary.com/dsjhcek2q/image/upload/v1575028686/portfolio/tims-todos-thumbnail-mobile_hj8drf.png" class="todo-thumbnail" alt="">
+          <img src="https://res.cloudinary.com/dsjhcek2q/image/upload/c_scale,w_900/v1575029336/portfolio/tims-todos-thumbnail_gaudjb.jpg" class="shadow todo-thumbnail" alt="">
         </div>
       </section>
     </main>
   </div>
 
 
-  <script src="swup.min.js"></script>
-  <script src="index.js"></script>
+  <script src="/swup.min.js"></script>
+  <script src="/index.js"></script>
 
 </body>
 

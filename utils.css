@@ -110,6 +110,7 @@
 .flex-wrap {
    flex-wrap: wrap;
 }
+
 .flex-dir-col {
    flex-direction: column;
 }
@@ -119,9 +120,11 @@
 .align-item-cent {
    align-items: center;
 }
-
 .just-self-left {
    justify-self: flex-start;
+}
+.just-space-between {
+   justify-content: space-between;
 }
 
 /* 6. Shadows */
