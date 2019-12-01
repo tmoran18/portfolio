@@ -12,6 +12,7 @@ a {
 
 .hidden {
    visibility: hidden;
+   position: absolute;
 }
 /******************* Navigation ********************/
 .header {

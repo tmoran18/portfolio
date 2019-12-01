@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tim Moran - Portfolio</title>
+  <title>Tim Moran | About</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="utils.css">
@@ -110,7 +110,10 @@
           <p class="contact-para font-16 text-cent line-h-2 mb2 ma ">Whether you have a question, want to start a project or simply want to connect.
             Feel free to send me a message in the contact form.</p>
           <div class="form-wrapper ma">
-            <form action="">
+              <form name="contact" method="POST" data-netlify="true">
+                <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  </p>
               <label for="contact_name"></label>
               <input type="text" name="name" id="contact_name" placeholder="Name..." class="font-16 mb1">
               <label for="contact_email"></label>
