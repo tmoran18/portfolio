@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <div id="swup" class="page-container transition-fade">
     <header class="bg-dark header">
       <nav class="nav flex ma align-item-cent">
@@ -64,29 +65,29 @@
     </header>
     <main>
       <section class="contact">
-        <img src="./images/map.jpg" class="form-bg-image" alt="Grey map of Brisbane City">
-        <div class="form-wrapper">
-          <div class="form-container">
-            <div class="form-circle-top">
-              <img src="./images/phone-book.png" width="40px" alt="">
-            </div>
-            <h2>Get in Touch</h2>
-            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-              <p class="hidden">
-                <label>Don't fill this out if you're human:<input name="bot-field" /></label>
-              </p>
-              <div class="form-name-fields">
-                <input class="font-16" aria-label="First Name" type="text" name="First-Name" placeholder="First Name" required />
-                <input class="font-16" aria-label="Last Name" type="text" name="Last-Name" placeholder="Last Name" required />
-              </div>
-              <input class="font-16" aria-label="email" type="email" name="email" placeholder="Your email address" required />
-              <div class="textarea-message-container">
-                <textarea class="font-16 messageArea" onfocus="focus(this)" aria-label="message" rows="4" name="message" placeholder="Write your message here ..."></textarea>
-              </div>
-              <input type="submit" value="Submit" />
+
+        <div class="wrapper mt3">
+
+          <h2 class="font-40 font-weight-400 text-cent mb1">Get In Touch</h2>
+          <p class="contact-para font-16 text-cent line-h-2 mb2 ma ">Whether you have a question, want to start a project or simply want to connect.
+            Feel free to send me a message in the contact form.</p>
+          <div class="form-wrapper ma">
+            <form action="">
+              <label for="contact_name"></label>
+              <input type="text" name="name" id="contact_name" placeholder="Name..." class="font-16 mb1">
+              <label for="contact_email"></label>
+              <input type="email" name="email" id="contact_email" placeholder="Email..." class="font-16 mb1">
+              <label for="contact_subject"></label>
+              <input type="text" name="subject" id="contact_subject" placeholder="Subject..." class="font-16 mb1">
+              <label for="contact_message"></label>
+              <textarea name="message" id="contact_message" cols="30" rows="10" class="font-16 mb1">Message...</textarea>
+              <input type="submit" value="SEND" class="submit-button font-16
+              font-weight-700">
             </form>
           </div>
+
         </div>
+
       </section>
     </main>
 

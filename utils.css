@@ -47,6 +47,9 @@
 }
 
 /* 3. Margins */
+.ma {
+   margin: auto;
+}
 
 .mt1 {
    margin-top: 1rem;
@@ -77,10 +80,6 @@
 }
 .mb5 {
    margin-bottom: 5rem;
-}
-
-.ma {
-   margin: auto;
 }
 
 .pl1 {

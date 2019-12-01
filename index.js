@@ -30,6 +30,7 @@ function mobileNav() { // Wrapper function
     }
   };
 
+
   // Opens the DropDown mobile Navigation
   function openNav() {
     menu.style.top = ("90px");
@@ -51,11 +52,14 @@ function mobileNav() { // Wrapper function
       console.log("Nav Closed");
     }
   };
+
+
   var windowSize = window.matchMedia("(max-width: 900px)")
   checkWindowSize(windowSize) // Call listener function at run time
   windowSize.addListener(checkWindowSize) // Attach listener function on state changes
   // Event listener on the Hamburger menu to open and close the navigation
   hamburger.addEventListener('click', toggleMenu);
+
 
 
   //  Tool Tip Functions
