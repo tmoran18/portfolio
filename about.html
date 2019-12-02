@@ -110,21 +110,22 @@
           <p class="contact-para font-16 text-cent line-h-2 mb2 ma ">Whether you have a question, want to start a project or simply want to connect.
             Feel free to send me a message in the contact form.</p>
           <div class="form-wrapper ma">
-              <form name="contact" method="POST" data-netlify="true">
-                <p class="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                  </p>
-              <label for="contact_name"></label>
-              <input type="text" name="name" id="contact_name" placeholder="Name..." class="font-16 mb1">
-              <label for="contact_email"></label>
-              <input type="email" name="email" id="contact_email" placeholder="Email..." class="font-16 mb1">
-              <label for="contact_subject"></label>
-              <input type="text" name="subject" id="contact_subject" placeholder="Subject..." class="font-16 mb1">
-              <label for="contact_message"></label>
-              <textarea name="message" id="contact_message" cols="30" rows="10" class="font-16 mb1">Message...</textarea>
-              <input type="submit" value="SEND" class="submit-button font-16
-              font-weight-700">
-            </form>
+            <form name="contact" method="POST" data-netlify="true">
+              <p class="hidden">
+                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <p class="font-16" style="text-align: left;"><span class="font-20">*</span> Required Fields</p>
+            <label for="contact_name"></label>
+            <input type="text" name="name" id="contact_name" placeholder="Name*..." class="font-20 mb1" required>
+            <label for="contact_email"></label>
+            <input type="email" name="email" id="contact_email" placeholder="Email*..." class="font-20 mb1" required>
+            <label for="contact_subject"></label>
+            <input type="text" name="subject" id="contact_subject" placeholder="Subject ..." class="font-20 mb1">
+            <label for="contact_message"></label>
+            <textarea name="message" id="contact_message" cols="30" rows="10" class="font-20 mb1" placeholder="Message*..." style="padding-top:1rem;" required></textarea>
+            <input type="submit" value="SEND" class="submit-button font-16
+            font-weight-700">
+          </form>
           </div>
 
         </div>
