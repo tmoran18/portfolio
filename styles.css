@@ -448,9 +448,16 @@ hr {
    padding: 0;
    margin: 0;
    width: 95%;
-   background: #c43235;
+   background: #333;
    color: #fff;
    border: none;
+   cursor: pointer;
+}
+
+.submit-button:hover {
+   background:#fff;
+   color:#333;
+   border:1px solid #333;
 }
 
 form input,
