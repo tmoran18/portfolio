@@ -44,7 +44,7 @@ a {
 .menu-container .menu li {
    display: inline-block;
 }
-.menu-container .menu a {
+.menu-container ul.menu a {
    color: #fff;
    text-decoration: none;
    font-size: 1rem;
