@@ -584,7 +584,7 @@ html.is-animating .transition-fade {
    header nav .menu-container ul.menu:first-child {
       margin: 0;
    }
-   .nav-menu a:first-child {
+   .nav-list:first-child {
       border-top: 0.5px solid #ccc;
       margin-top: 1rem;
    }
