@@ -439,10 +439,6 @@ hr {
    text-align: center;
 }
 
-.img-wrapper {
-   height: 500px;
-   max-width: 500px;
-}
 
 .submit-button {
    padding: 0;
@@ -513,47 +509,8 @@ html.is-animating .transition-fade {
    }
 }
 
-@media only screen and (max-width: 900px) {
-   .projects-list {
-      flex-wrap: wrap;
-      justify-content: center;
-      padding-left: 0;
-   }
-   .tooltip .tooltiptext {
-      margin-left: -220px;
-      top: 7px;
-   }
-   /* Portfolio Projects - change flex direction */
-   .top-container {
-      padding-top: 1rem;
-   }
-   .container-row {
-      flex-direction: column;
-      margin: 1rem;
-      padding-bottom: 0;
-   }
-   .top-container-text {
-      width: 100%;
-      margin-top: 0;
-   }
-   .top-container-heading {
-      font-size: 20px;
-   }
-   .top-container-img {
-      margin: auto;
-      width: 80%;
-   }
-   .top-container-heading br {
-      display: none;
-   }
-   .bottom-container-img {
-      justify-content: center;
-   }
-   .bottom-container-img img {
-      width: 100%;
-      height: auto;
-   }
-}
+ 
+
 
 /*  Media Queries for Navigation */
 @media only screen and (max-width: 900px) {
