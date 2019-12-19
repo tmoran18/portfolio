@@ -3,4 +3,4 @@
 
 This is my portfolio website. The website is HTML / CSS / JavaScript.
 
-You can check it out here tim-moran.com
+You can check it out here [www.tim-moran.com](https://tim-moran.com)
