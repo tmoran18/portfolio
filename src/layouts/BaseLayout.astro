@@ -1,5 +1,6 @@
 ---
 import ThemeScript from "../components/ThemeScript.astro";
+import Spotlight from "../components/Spotlight";
 
 interface Props {
   title: string;
@@ -68,6 +69,7 @@ const siteUrl = "https://tim-moran.com";
   <body
     class="min-h-screen bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300"
   >
+    <Spotlight client:load />
     <slot />
   </body>
 </html>
