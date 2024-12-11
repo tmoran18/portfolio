@@ -1,0 +1,73 @@
+---
+import ThemeScript from "../components/ThemeScript.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Tim Moran | Front End Developer in Brisbane specialising in React, Next.js, and SaaS applications. 3+ years of experience scaling startups from ground up.",
+} = Astro.props;
+
+const defaultTitle = "Tim Moran | Front End Developer | Brisbane";
+const siteUrl = "https://tim-moran.com";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <ThemeScript />
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="Front End Developer, React Developer, Next.js, Brisbane Developer, SaaS Development, JavaScript, HTML, CSS"
+    />
+    <meta name="author" content="Tim Moran" />
+    <link rel="canonical" href={siteUrl} />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content={title || defaultTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+
+    <!-- Optional: Add your profile image when you have one -->
+    <!-- <meta property="og:image" content={`${siteUrl}/profile-image.jpg`} /> -->
+
+    <title>{title || defaultTitle}</title>
+
+    <!-- JSON-LD for rich search results -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Tim Moran",
+        "url": "https://tim-moran.com",
+        "jobTitle": "Front End Developer",
+        "description": "Front End Developer specializing in React and Next.js with 3+ years of experience in SaaS development",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brisbane",
+          "addressRegion": "QLD",
+          "addressCountry": "Australia"
+        },
+        "sameAs": [
+          // Add your social profile URLs when you have them
+          // "https://linkedin.com/in/your-profile",
+          // "https://github.com/your-profile"
+        ]
+      }
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300"
+  >
+    <slot />
+  </body>
+</html>
