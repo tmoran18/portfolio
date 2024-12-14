@@ -1,19 +1,20 @@
 ---
-import ThemeScript from "../components/ThemeScript.astro";
-import Spotlight from "../components/Spotlight";
+import ThemeScript from '../components/ThemeScript.astro'
+import { Spotlight } from '../components/Spotlight'
+import { Navigation } from '../components/Navigation'
 
 interface Props {
-  title: string;
-  description?: string;
+  title: string
+  description?: string
 }
 
 const {
   title,
-  description = "Tim Moran | Front End Developer in Brisbane specialising in React, Next.js, and SaaS applications. 3+ years of experience scaling startups from ground up.",
-} = Astro.props;
+  description = 'Tim Moran | Front End Developer in Brisbane specialising in React, Next.js, and SaaS applications. 3+ years of experience scaling startups from ground up.',
+} = Astro.props
 
-const defaultTitle = "Tim Moran | Front End Developer | Brisbane";
-const siteUrl = "https://tim-moran.com";
+const defaultTitle = 'Tim Moran | Front End Developer | Brisbane'
+const siteUrl = 'https://tim-moran.com'
 ---
 
 <!doctype html>
@@ -67,9 +68,12 @@ const siteUrl = "https://tim-moran.com";
     </script>
   </head>
   <body
-    class="min-h-screen bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300"
+    class="min-h-screen bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 leading-relaxed"
   >
     <Spotlight client:load />
-    <slot />
+    <Navigation client:load />
+    <main class="pt-16">
+      <slot />
+    </main>
   </body>
 </html>
