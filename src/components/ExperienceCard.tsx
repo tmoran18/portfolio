@@ -19,16 +19,16 @@ export const ExperienceCard = ({
     <a
       href={url}
       target="_blank"
-      className="block cursor-pointer p-6 rounded-lg hover:bg-badge-light-bg/5 dark:hover:bg-badge-dark-bg/5 transition-colors group"
+      className="block cursor-pointer lg:p-6 rounded-lg hover:bg-badge-light-bg/5 dark:hover:bg-badge-dark-bg/5 transition-colors group"
     >
       <div className="flex flex-col sm:flex-row justify-betweenmb-4">
         <div className="min-w-[120px] my-1 text-sm text-text-light/60 dark:text-text-dark/60">
           {date}
         </div>
         <div className="flex-1 sm:ml-8">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="text-lg font-semibold">{title}</h3>
-            <p className="text-sm text-text-light/60 dark:text-text-dark/60">{company}</p>
+          <div className="flex justify-between flex-col sm:flex-row items-start sm:items-center mb-4">
+            <h3 className="text-lg text-text-light dark:text-white font-semibold">{title}</h3>
+            <p className="text-sm text-text-light/70 dark:text-text-dark/80">{company}</p>
           </div>
           <p className="mb-4 text-text-light/80 dark:text-text-dark/80">{description}</p>
           <div className="flex flex-wrap gap-2">
