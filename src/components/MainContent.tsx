@@ -1,6 +1,7 @@
 import { ExperienceCard } from './ExperienceCard'
 import { experiences } from '../data/experiences'
 import { Badge } from './Badge'
+import { ContactForm } from './ContactForm'
 
 export default function MainContent() {
   return (
@@ -11,8 +12,8 @@ export default function MainContent() {
           <div className="space-y-6">
             <h1 className="text-5xl font-bold">Front End Developer</h1>
             <p className="text-xl">
-              Specialising in building exceptional digital experiences with Modern Front End
-              Technologies
+              Specialising in building exceptional digital experiences with modern front end
+              technologies
             </p>
             <Badge>TypeScript</Badge>
             <Badge>React</Badge>
@@ -45,16 +46,16 @@ export default function MainContent() {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="space-y-8 scroll-mt-20">
+          <section id="projects" className="lg:pl-6 space-y-8 scroll-mt-20">
             <h2 className="text-2xl font-bold">Projects</h2>
             {/* Project cards will go here */}
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="space-y-6 scroll-mt-20">
+          <section id="contact" className="lg:pl-6 space-y-6 scroll-mt-20">
             <h2 className="text-2xl font-bold">Contact</h2>
             <p>Get in touch for opportunities or just to say hi!</p>
-            {/* Contact info or form will go here */}
+            <ContactForm />
           </section>
         </div>
       </div>
