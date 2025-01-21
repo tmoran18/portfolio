@@ -27,7 +27,7 @@ _Desktop Lighthouse Scores: 100 across all metrics_
 ![Mobile Performance](./public/page-speed-mobile.png)
 _Mobile Lighthouse Scores: 100 across all metrics_
 
-These exceptional scores are achieved through Astro's built-in optimizations:
+These exceptional scores are achieved through Astro's built-in optimisations:
 
 - Zero-JS by default approach
 - Automatic image optimisation
