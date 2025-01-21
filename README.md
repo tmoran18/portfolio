@@ -21,10 +21,10 @@ A modern, minimalist portfolio site built with Astro, showcasing my work as a Fr
 
 This portfolio achieves perfect Lighthouse scores across all metrics on both mobile and desktop platforms:
 
-![Desktop Performance](/page-speed-desktop.png)
+![Desktop Performance](./public/page-speed-desktop.png)
 _Desktop Lighthouse Scores: 100 across all metrics_
 
-![Mobile Performance](/page-speed-mobile.png)
+![Mobile Performance](./public/page-speed-mobile.png)
 _Mobile Lighthouse Scores: 100 across all metrics_
 
 These exceptional scores are achieved through Astro's built-in optimizations:
