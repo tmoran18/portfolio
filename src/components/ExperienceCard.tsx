@@ -19,7 +19,7 @@ export const ExperienceCard = ({
     <a
       href={url}
       target="_blank"
-      className="block cursor-pointer lg:p-6 rounded-lg hover:bg-badge-light-bg/5 dark:hover:bg-badge-dark-bg/5 transition-colors group"
+      className="block cursor-pointer lg:p-6 rounded-lg hover:bg-blue-50 dark:hover:bg-badge-dark-bg/5 transition-colors group"
     >
       <div className="flex flex-col sm:flex-row justify-betweenmb-4">
         <div className="min-w-[120px] my-1 text-sm text-text-light/60 dark:text-text-dark">
