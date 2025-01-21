@@ -27,6 +27,7 @@ export default function MainContent() {
                 href="https://github.com/tmoran18"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit my GitHub profile"
                 className="hover:opacity-75 transition-opacity"
               >
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
@@ -37,6 +38,7 @@ export default function MainContent() {
                 href="https://www.linkedin.com/in/t-moran"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit my LinkedIn profile"
                 className="hover:opacity-75 transition-opacity"
               >
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">

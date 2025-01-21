@@ -22,7 +22,10 @@ export const MobileNav = () => {
 
   return (
     <Drawer.Root direction="left" open={isOpen} onOpenChange={setIsOpen}>
-      <Drawer.Trigger className="md:hidden p-2 hover:bg-badge-light-bg/5 dark:hover:bg-badge-dark-bg/5 rounded-lg">
+      <Drawer.Trigger
+        aria-label="Toggle mobile menu"
+        className="md:hidden p-2 hover:bg-badge-light-bg/5 dark:hover:bg-badge-dark-bg/5 rounded-lg"
+      >
         <div className="relative w-6 h-6">
           <span
             className={`absolute left-0 top-1/2 -translate-y-1/2 block h-0.5 w-6 transform transition duration-200 ease-in-out bg-text-light dark:bg-text-dark ${
